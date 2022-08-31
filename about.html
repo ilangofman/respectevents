@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="logo.ico">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Respect Agency</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat:600" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+  <link href="css.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet">
+      	<script src="jquery.min.js"></script>
+      <script src="js.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|Spectral:500i" rel="stylesheet">
+  
+    <script src="https://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script>
+// Main image carousel
+$(document).ready(function(){
+	$('.carousel').carousel();
+    $("#headerMrS > div:gt(0)").hide();
+	
+		var carouselInt = '';
+
+	var carouDiv = function(){
+	    carouselInt = setInterval(function() { 
+	      $('#headerMrS > div:first')
+	        .fadeOut(500)
+	        .next()
+	        .fadeIn(500)
+	        .end()
+	        .appendTo('#headerMrS');
+	    },  3000);
+	};
+
+	$(carouDiv());//Initialise the carousel function
+
+	$("#headerMrS").hover(function(){//Stop the carousel on hover
+	 clearInterval(carouselInt);
+	  },function(){
+	  carouDiv();
+	});
+
+	
+	
+	//Direction Arrow links
+	$(".button-sales").click(function(){
+		$(".header").fadeOut(800);
+		$(".sales").animate({opacity:"show"},800);
+	});
+	$(".button-modern").click(function(){
+		$(".header").fadeOut(800);
+		$(".modern").animate({opacity:"show"},800);
+	});
+	$(".button-antique").click(function(){
+		$(".header").fadeOut(800);
+		$(".antique").animate({opacity:"show"},800);
+	});
+});
+
+</script>  
+	<style type="text/css">
+	html, body, ul {
+		margin: 0px;
+	}
+        	#headerMrS {position:relative; height:150px; width:100%}
+	.header {position:absolute; top:0; left:0}
+	canvas {
+		display: block;
+	}
+	</style>
+  </head>
+
+  <body>
+ <nav class="navbar navbar-default ">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      
+          
+        <div class="container">
+        <div class="menu">
+        <ul class="nav navbar-nav" >
+
+
+      </ul>
+     </div>
+             <div class="menu">
+      <ul class="nav navbar-nav navbar-right">
+        
+               <li class="book " id="navLinks"  ><a href="index">Home</a></li>
+            <li class="report" id="navLinks"><a href="StaffingServices">Staffing Services</a></li>
+            <li id="navLinks" class="active"><a href="about">About</a></li>
+            <li id="navLinks"><a href="careers">Careers</a></li>
+            <li id="navLinks"><a href="contact">Contact Us</a></li>
+            
+          </ul>
+            </div>
+  
+    </div>        
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>      
+      <div class="jumbotron" id="logoTitle"><div id="title">Respect<br></div><div id="banquetServices">Banquet Staff Agency</div></div>
+
+
+      
+      <div id="infoContainer">
+                <div class="container">
+                    <div id="outlineRowContainer" class="row">
+                        <div id="outlineRow" class="col-sm-8">
+<!--                            <img  id="picture" src="picture1.jpg"><br>-->
+                            <h3 id="subheading">About Us</h3><hr><div id="staffing">
+                            
+   <br>                          
+Our banquet service agency has been operating since 2009. 
+<br><br>
+We have experience in banquet halls all accross Toronto and the GTA.
+<br><br>
+Without the wonderful people we have met along the way who offered their help, we wouldn't be where we are today. We like to treat our customers, the way we want to be treated ourselves. Our goal is to help you make your event a success. <br>                            
+                            
+              
+                            
+                            
+                            
+                            
+                    </div>
+                            <br><br>
+                            
+                            <div id="staffing">
+                            
+                           </div>
+                        </div>
+                        <div id="outlineRow" class="col-sm-4">
+                            <br> <img id="picture" src="picture2.jpg" >
+                           
+                           
+                        </div>
+                           
+                    </div>
+                    <div id="blank"></div>
+                    <hr>
+                    
+                    
+                </div>
+       
+      </div>
+      
+      
+
+
+      	<div id="footerwrap">
+		<div class="container">
+			<div class="row centered">
+				<div class="col-lg-4" id="footerItem">
+					<p>Respect Agency</p>
+				</div>
+			
+				<div class="col-lg-4" id="footerItem">
+					<p>Banquet Services</p>
+				</div>
+				<div class="col-lg-4" id="footerItem">
+					<p>Toronto, Canada</p>
+				</div>
+			</div>
+		</div>
+	</div><! --/footerwrap -->
+      
+      
+      
+      
+      <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
